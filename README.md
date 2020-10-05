@@ -9,8 +9,8 @@ Released under the MIT License, see LICENSE file for more info
 Disclaimer: The bosslogger was developed in support of, but not affiliated with Braiins OS(+), SlushPool, or Braiins Systems in any way. Braiins OS, Braiins OS+, and SlushPool are copyrights and/or trademarks of Braiins Systems.
 
 ## DEPENDENCIES ##
--- the system is just two shell scripts. It should work with any Linux environment with bash
--- Other software required: nc, jq, bc. To install:
+- The system is just two shell scripts. It should work with any Linux environment with bash
+- Other software required: nc, jq, bc. To install:
 	# sudo apt-get install nc jq bc
 
 ## USAGE ##
@@ -18,10 +18,9 @@ Disclaimer: The bosslogger was developed in support of, but not affiliated with 
 	$ cd bosslogger/
 	$ chmod u+x bosslogger.sh log_reading.sh
 
-
 2. Call the main script to start logging to output:
 	$ nohup ./bosslogger.sh  
-	# press ctrl + Z, then type "bg" to put task in background. 
+	press ctrl + Z, then type "bg" to put task in background. 
 
 3. Keep an eye on your miner's performance:
 	$ tail -f <logfile_date_str>.csv
